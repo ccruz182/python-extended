@@ -17,7 +17,7 @@ DB_CONFIG = {
 @retry(max_attempts=3, delay=0.5)
 @log_call
 def test_1():
-    print("a")
+    print("B")
 
 
 with timer("TIME_1"), batch_writer('output.jsonl', batch_size=3) as writer, db_connection(**DB_CONFIG) as conn :
