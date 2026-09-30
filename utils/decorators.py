@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 def retry(
     max_attempts: int = 4,
-    delay: float = 1.0,
+    delay: float = 0.5,
     exceptions: tuple[Type[Exception], ...] = (Exception,)
 ):
     """
