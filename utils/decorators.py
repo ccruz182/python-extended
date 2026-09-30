@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 
 
 def retry(
-    max_attempts: int = 3,
+    max_attempts: int = 4,
     delay: float = 1.0,
     exceptions: tuple[Type[Exception], ...] = (Exception,)
 ):
